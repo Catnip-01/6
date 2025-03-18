@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Form</title>
+</head>
+<body>
+    <form autocomplete="on" style="width: 50%; margin: 20px auto; padding: 20px; border: 1px solid #ccc;">
+        
+        <!-- Customer Info Fieldset -->
+        <fieldset style="border: 1px solid #ccc; padding: 15px;">
+            <legend>Customer Info</legend>
+            
+            <!-- Name Field -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" autofocus required
+                   style="width: 100%; padding: 8px; margin-bottom: 10px;">
+            
+            <!-- Telephone Field -->
+            <label for="telephone">Telephone:</label>
+            <input type="tel" id="telephone" name="telephone" placeholder="Enter your phone number" pattern="^\+?[1-9]\d{1,14}$" required
+                   style="width: 100%; padding: 8px; margin-bottom: 10px;">
+            
+            <!-- Email Field -->
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" multiple required
+                   style="width: 100%; padding: 8px; margin-bottom: 10px;">
+        </fieldset>
+
+        <!-- Books Fieldset -->
+        <fieldset style="border: 1px solid #ccc; padding: 15px; margin-top: 15px;">
+            <legend>Books</legend>
+            
+            <!-- Books List (Data List) -->
+            <label for="books">Select Book:</label>
+            <input list="books-list" id="books" name="books" placeholder="Choose a book"
+                   style="width: 100%; padding: 8px; margin-bottom: 10px;">
+            <datalist id="books-list">
+                <option value="The Great Gatsby">
+                <option value="1984">
+                <option value="To Kill a Mockingbird">
+                <option value="Pride and Prejudice">
+                <option value="Moby Dick">
+            </datalist>
+            
+            <!-- Quantity Field -->
+            <label for="quantity">Quantity (Max 5):</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="5" required
+                   style="width: 100%; padding: 8px; margin-bottom: 10px;">
+        </fieldset>
+
+        <!-- Submit Button -->
+        <button type="submit" style="padding: 8px 16px; background-color: #333; color: white; border: none; cursor: pointer;">
+            Submit
+        </button>
+    </form>
+</body>
+</html>
