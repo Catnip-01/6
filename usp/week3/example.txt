@@ -1,0 +1,2 @@
+Hello, this is the original file descriptor.
+This is written using dup().
