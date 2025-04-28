@@ -1,0 +1,6 @@
+in todays class i just had to make and run a docker image
+first i created the html file using the boilerplate
+then i created the docker file and installed all the nginx stuff and whatnot manually on the terminal
+finally i created docker image using "docker build -t <tag-name> ."
+make sure to include the "." there
+finally to run the image "docker run -d -p 8080:80 <tag-name>"
